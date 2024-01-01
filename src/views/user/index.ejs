@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/user.css" />
+  </head>
+  <body>
+    <%- include("../partials/header/header.ejs") %>
+    <h2>Hello USER EJS</h2>
+    <p><%= content %></p>
+    <p><%# content %></p>
+    <div>
+      <% if(condition % 2 == 0) { %>
+      <h3>Chia het cho 2</h3>
+      <% } else { %>
+      <h3>Khong chia het cho 2</h3>
+      <% } %>
+    </div>
+    <div id="number-render"></div>
+    <script src="./js/user.js"></script>
+  </body>
+</html>
